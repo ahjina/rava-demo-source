@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {}
+  },
+  "projects": {
+    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
+        "projectName": "RavaDAO",
+        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
+        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
+        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+                "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+        "projectName": "RavaModel",
+        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
+        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
