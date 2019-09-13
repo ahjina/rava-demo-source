@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box; /* width và height của element sẽ được tính là contain + padding + border chứ không phải mỗi contain */
+  margin: 0; /* bỏ margin mặc định của 1 vài element như html, body, ... */
+}
+
+img {
+  width: 100%; /* cho hình chỉ lắp đầy container của nó chứ không phóng theo size */
+  vertical-align: middle; /* giúp hình không bị khoảng trắng nhỏ bên dưới */
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: 0;
+}
+
+html {
+  body {
+  }
+}
