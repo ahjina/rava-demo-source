@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box; /* width và height của element sẽ được tính là contain + padding + border chứ không phải mỗi contain */
   margin: 0; /* bỏ margin mặc định của 1 vài element như html, body, ... */
+  font-family: sans-serif;
 }
 
 img {
@@ -23,5 +24,54 @@ button {
 
 html {
   body {
+    header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75em;
+      .logo {
+        border: 1px solid black;
+        padding: 0;
+        height: 13vh;
+        width: 15vw;
+      }
+      .search {
+        display: flex;
+        // align-items: center;
+        padding: 4vh 0; //Dùng padding thay cho align-items, bởi vì vậy thì nút sẽ cùng height với input.
+        input {
+          padding: 15px;
+          outline: 0;
+          width: 30vw;
+        }
+        button {
+          height: 58px;
+        }
+      }
+      .account {
+        display: flex;
+        align-items: center;
+        .account-icon {
+          border: 1px solid black;
+          width: 50px;
+          height: 50px;
+          margin-right: 0.5vw;
+        }
+      }
+      .cart {
+        display: flex;
+        align-items: center;
+        .cart-icon {
+          border: 1px solid black;
+          width: 50px;
+          height: 50px;
+          margin-right: 0.5vw;
+        }
+        .cart-info {
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }

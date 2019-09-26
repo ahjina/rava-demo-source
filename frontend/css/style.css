@@ -4,6 +4,7 @@
   /* width và height của element sẽ được tính là contain + padding + border chứ không phải mỗi contain */
   margin: 0;
   /* bỏ margin mặc định của 1 vài element như html, body, ... */
+  font-family: sans-serif;
 }
 
 img {
@@ -24,6 +25,53 @@ a {
 button {
   outline: none;
   border: 0;
+}
+
+html body header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+}
+html body header .logo {
+  border: 1px solid black;
+  padding: 0;
+  height: 13vh;
+  width: 15vw;
+}
+html body header .search {
+  display: flex;
+  padding: 4vh 0;
+}
+html body header .search input {
+  padding: 15px;
+  outline: 0;
+  width: 30vw;
+}
+html body header .search button {
+  height: 58px;
+}
+html body header .account {
+  display: flex;
+  align-items: center;
+}
+html body header .account .account-icon {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5vw;
+}
+html body header .cart {
+  display: flex;
+  align-items: center;
+}
+html body header .cart .cart-icon {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5vw;
+}
+html body header .cart .cart-info p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
