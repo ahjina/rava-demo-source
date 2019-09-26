@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box; /* width và height của element sẽ được tính là contain + padding + border chứ không phải mỗi contain */
   margin: 0; /* bỏ margin mặc định của 1 vài element như html, body, ... */
+  padding: 0;
   font-family: sans-serif;
 }
 
@@ -22,16 +23,20 @@ button {
   border: 0;
 }
 
+$base-color: rgb(15, 158, 216);
+
 html {
   body {
     header {
       display: flex;
       justify-content: space-between;
       font-size: 0.75em;
+      padding: 0 18vw;
+      background-color: lightgrey;
       .logo {
         border: 1px solid black;
         padding: 0;
-        height: 13vh;
+        min-height: 100%;
         width: 15vw;
       }
       .search {
@@ -45,6 +50,9 @@ html {
         }
         button {
           height: 58px;
+          padding: 0 1.5em;
+          background-color: $base-color;
+          color: white;
         }
       }
       .account {
@@ -72,6 +80,35 @@ html {
           }
         }
       }
+    }
+    nav {
+      background-color: $base-color;
+      padding: 0 18vw;
+      color: white;
+      .aside-top {
+        padding: 1.6vh 1vw;
+        width: 15vw;
+        font-weight: bold;
+        background-color: rgb(0, 112, 157);
+        display: inline-block;
+        margin-right: 1vw;
+      }
+      ul {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0;
+        li {
+          display: inline-block;
+          padding: 15px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    main {
+    }
+    footer {
     }
   }
 }

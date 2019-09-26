@@ -4,6 +4,7 @@
   /* width và height của element sẽ được tính là contain + padding + border chứ không phải mỗi contain */
   margin: 0;
   /* bỏ margin mặc định của 1 vài element như html, body, ... */
+  padding: 0;
   font-family: sans-serif;
 }
 
@@ -31,11 +32,13 @@ html body header {
   display: flex;
   justify-content: space-between;
   font-size: 0.75em;
+  padding: 0 18vw;
+  background-color: lightgrey;
 }
 html body header .logo {
   border: 1px solid black;
   padding: 0;
-  height: 13vh;
+  min-height: 100%;
   width: 15vw;
 }
 html body header .search {
@@ -49,6 +52,9 @@ html body header .search input {
 }
 html body header .search button {
   height: 58px;
+  padding: 0 1.5em;
+  background-color: #0f9ed8;
+  color: white;
 }
 html body header .account {
   display: flex;
@@ -72,6 +78,31 @@ html body header .cart .cart-icon {
 }
 html body header .cart .cart-info p {
   margin: 0;
+}
+html body nav {
+  background-color: #0f9ed8;
+  padding: 0 18vw;
+  color: white;
+}
+html body nav .aside-top {
+  padding: 1.6vh 1vw;
+  width: 15vw;
+  font-weight: bold;
+  background-color: #00709d;
+  display: inline-block;
+  margin-right: 1vw;
+}
+html body nav ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+}
+html body nav ul li {
+  display: inline-block;
+  padding: 15px;
+}
+html body nav ul li:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
