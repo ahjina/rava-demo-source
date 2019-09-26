@@ -33,7 +33,6 @@ html body header {
   justify-content: space-between;
   font-size: 0.75em;
   padding: 0 18vw;
-  background-color: lightgrey;
 }
 html body header .logo {
   border: 1px solid black;
@@ -105,6 +104,7 @@ html body nav ul li:hover {
 }
 html body main {
   padding: 0 18vw;
+  margin-bottom: 2vh;
 }
 html body main section.top-section {
   display: flex;
@@ -212,7 +212,7 @@ html body main section.products .flex-layout .categories .banner {
   margin-bottom: 2vh;
 }
 html body main section.products .flex-layout .categories .category-name {
-  padding: 1vh;
+  padding: 0.5vw;
   border: 1px solid black;
   text-align: center;
   margin-bottom: 2vh;
@@ -230,6 +230,51 @@ html body main section.products .flex-layout .categories .products-grid .product
 }
 html body main section.products .flex-layout .categories .more {
   text-align: center;
+}
+html body main section.recommended .title {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.5vw;
+  margin-bottom: 2vh;
+}
+html body main section.recommended .title p {
+  margin: 0;
+}
+html body main section.recommended .slide {
+  border: 1px solid black;
+  text-align: center;
+  height: 400px;
+}
+html body footer {
+  background-color: #f2f2f2;
+  padding: 0 18vw;
+}
+html body footer .lists-container {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+html body footer .lists-container .list {
+  width: 24%;
+}
+html body footer .lists-container .list p.title {
+  font-weight: bold;
+  padding: 2vh 0;
+  border-bottom: 1px solid black;
+}
+html body footer .lists-container .list ul {
+  list-style-type: none;
+  padding-top: 1vh;
+}
+html body footer .lists-container .list ul li {
+  margin-bottom: 1vh;
+}
+html body footer .info {
+  font-size: 0.8em;
+}
+html body footer .info p {
+  margin-bottom: 1vh;
 }
 
 /*# sourceMappingURL=style.css.map */

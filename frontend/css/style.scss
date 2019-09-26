@@ -33,7 +33,7 @@ html {
       justify-content: space-between;
       font-size: 0.75em;
       padding: 0 18vw;
-      background-color: lightgrey;
+      // background-color: lightgrey;
       .logo {
         border: 1px solid black;
         padding: 0;
@@ -108,6 +108,7 @@ html {
     }
     main {
       padding: 0 18vw;
+      margin-bottom: 2vh;
       section {
         &.top-section {
           display: flex;
@@ -218,7 +219,7 @@ html {
                 margin-bottom: 2vh;
               }
               .category-name {
-                padding: 1vh;
+                padding: 0.5vw;
                 border: 1px solid black;
                 text-align: center;
                 margin-bottom: 2vh;
@@ -240,9 +241,56 @@ html {
             }
           }
         }
+        &.recommended {
+          .title {
+            text-align: center;
+            border: 1px solid black;
+            padding: 0.5vw;
+            margin-bottom: 2vh;
+            p {
+              margin: 0;
+            }
+          }
+          .slide {
+            border: 1px solid black;
+            text-align: center;
+            height: 400px;
+          }
+        }
       }
     }
     footer {
+      background-color: rgb(242, 242, 242);
+      padding: 0 18vw;
+      .lists-container {
+        display: flex;
+        border-bottom: 1px solid lightgray;
+        justify-content: space-between;
+        margin-bottom: 2vh;
+        .list {
+          width: 24%;
+          p {
+            &.title {
+              font-weight: bold;
+              padding: 2vh 0;
+              border-bottom: 1px solid black;
+            }
+          }
+          ul {
+            list-style-type: none;
+            padding-top: 1vh;
+            li {
+              margin-bottom: 1vh;
+            }
+          }
+        }
+      }
+      .info {
+        font-size: 0.8em;
+        p {
+          margin-bottom: 1vh;
+        }
+      }
     }
   }
 }
