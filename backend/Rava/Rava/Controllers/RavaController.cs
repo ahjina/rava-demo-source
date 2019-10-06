@@ -12,9 +12,9 @@ namespace Rava.Controllers
     {
         protected DataContext DbContext;
 
-        //public RavaController(DataContext context, IConfiguration configuration)
-        //{
-        //    DbContext = context;
-        //}
+        public RavaController(DataContext context)
+        {
+            DbContext = context;
+        }
     }
 }

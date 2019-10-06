@@ -8,3 +8,25 @@ backend/RavaDemo/RavaDAO/obj/
 backend/RavaDemo/RavaDemo/obj/
 
 backend/RavaDemo/RavaModel/obj/
+
+backend/Rava/.vs/
+
+backend/Rava/Data/bin/
+
+backend/Rava/Data/obj/
+
+*.csproj
+
+*.sln
+
+backend/Rava/Model/bin/
+
+backend/Rava/Model/obj/
+
+backend/Rava/Rava/bin/
+
+backend/Rava/Rava/obj/
+
+backend/Rava/Service/bin/
+
+backend/Rava/Service/obj/

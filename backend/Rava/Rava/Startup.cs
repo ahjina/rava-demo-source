@@ -12,6 +12,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+//using Service;
+//using Service.Interfaces;
 
 namespace Rava
 {
@@ -27,7 +30,22 @@ namespace Rava
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options => options.UseSqlServer("Data Source=LAPTOP-IE00MCEL\\KURORYUU;Initial Catalog=dbDemo;"));
+            services.AddDbContext<DataContext>(options => options.UseSqlServer("Data Source=LAPTOP-IE00MCEL\\KURORYUU;Initial Catalog=dbDemo;Integrated Security=True;Connect Timeout=30;"));
+
+            //services.AddScoped<IProductProvider, ProductProvider>();
+
+            services
+                .AddMvc(options =>
+                {
+                    options.EnableEndpointRouting = false;
+                })
+                .AddNewtonsoftJson()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.IgnoreNullValues = true;
+                    options.JsonSerializerOptions.WriteIndented = true;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

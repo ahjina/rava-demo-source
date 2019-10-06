@@ -2,28 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Data;
+using Data.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Service;
 
 namespace Rava.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : RavaController
+    public class ProductController : ControllerBase
     {
-        private readonly ProductProvider _productProvider;
+        private readonly DataContext _context;
 
-        public ProductController(ProductProvider productProvider, IConfiguration configuration)
+        public ProductController(DataContext context)
         {
-            _productProvider = productProvider;
+            _context = context;
         }
 
-        [HttpPost("[action]")]
-        public IActionResult Filter(int? Type)
+        [AllowAnonymous]
+        [HttpGet("[action]")]
+        public IActionResult Filter()
         {
-            return Ok(_productProvider.Filter(Type));
+            return Ok(_context.ProductFilter(null));
         }
     }
 }

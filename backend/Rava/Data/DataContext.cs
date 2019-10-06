@@ -8,16 +8,17 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
-
+using Model.Product;
 
 namespace Data
 {
-    public class DataContext: DbContext
+    public class DataContext: DbContext, IDataContext
     {
         protected DataContext() { }
         public DataContext(DbContextOptions<DataContext> options): base(options) { }
 
         public string ConnectionString = null;
+        
         public DataContext(string connectionString)
         {
             this.ConnectionString = connectionString;
@@ -25,6 +26,9 @@ namespace Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<ProductEntity>().HasKey(p => p.ProductCode);
+            builder.Entity<ProductEntity>().ToTable("Product");
+
             base.OnModelCreating(builder);
         }
 
@@ -37,9 +41,15 @@ namespace Data
             base.OnConfiguring(optionsBuilder);
         }
 
+        // Register Entities
+        public DbSet<ProductEntity> ProductEntity { get; set; }
+
+
         public int ExecuteNonQuery(string query, SqlParameter[] parameters)
         {
             var conn = Database.GetDbConnection();
+
+            if (conn.State != ConnectionState.Open) conn.Open();
 
             var command = conn.CreateCommand();
             command.CommandText = query;
@@ -55,6 +65,8 @@ namespace Data
         {
             var conn = Database.GetDbConnection();
             DataSet ds = new DataSet();
+
+            if (conn.State != ConnectionState.Open) conn.Open();
 
             try
             {
@@ -89,6 +101,8 @@ namespace Data
             var conn = Database.GetDbConnection();
             DataTable dt = new DataTable();
 
+            if (conn.State != ConnectionState.Open) conn.Open();
+
             try
             {
                 var command = conn.CreateCommand();
@@ -116,6 +130,16 @@ namespace Data
             }
 
             return dt;
+        }
+
+        public DataTable ProductFilter(int? Type)
+        {
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@Type", Type)
+            };
+
+            return ExecuteDataTable("[dbo].[Products.Filter]", parameters);
         }
     }
 }
