@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj": {}
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj": {}
   },
   "projects": {
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj": {
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj",
+        "projectUniqueName": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj",
         "projectName": "RavaBLL",
-        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj",
-        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\obj\\",
+        "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj",
+        "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+        "outputPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {
-                "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj"
+              "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {
+                "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj"
               },
-              "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
-                "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
+              "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+                "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
               }
             }
           }
@@ -63,20 +63,20 @@
         }
       }
     },
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
+        "projectUniqueName": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
         "projectName": "RavaDAO",
-        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
-        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\obj\\",
+        "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
+        "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+        "outputPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
-                "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
+              "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+                "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
               }
             }
           }
@@ -119,20 +119,20 @@
         }
       }
     },
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj": {
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj",
+        "projectUniqueName": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj",
         "projectName": "RavaDemo",
-        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj",
-        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\obj\\",
+        "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\RavaDemo.csproj",
+        "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+        "outputPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,11 +145,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj": {
-                "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj"
+              "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj": {
+                "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaBLL\\RavaBLL.csproj"
               },
-              "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
-                "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
+              "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+                "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
               }
             }
           }
@@ -189,20 +189,20 @@
         }
       }
     },
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+        "projectUniqueName": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
         "projectName": "RavaModel",
-        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
-        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\obj\\",
+        "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+        "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+        "outputPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

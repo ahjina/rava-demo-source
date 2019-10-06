@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Little Dragon\\.nuget\\packages\\": {},
+    "C:\\Users\\MY PC\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+      "projectUniqueName": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
       "projectName": "RavaModel",
-      "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
-      "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
-      "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\obj\\",
+      "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+      "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+      "outputPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

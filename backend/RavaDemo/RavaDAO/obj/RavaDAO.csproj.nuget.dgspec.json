@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {}
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {}
   },
   "projects": {
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
+        "projectUniqueName": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
         "projectName": "RavaDAO",
-        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
-        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\obj\\",
+        "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\RavaDAO.csproj",
+        "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+        "outputPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaDAO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
-                "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
+              "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+                "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -60,20 +64,20 @@
         }
       }
     },
-    "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
+    "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+        "projectUniqueName": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
         "projectName": "RavaModel",
-        "projectPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
-        "packagesPath": "C:\\Users\\Little Dragon\\.nuget\\packages\\",
-        "outputPath": "C:\\Kuro-Ryuu\\git-repo\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\obj\\",
+        "projectPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\RavaModel.csproj",
+        "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+        "outputPath": "E:\\PJ Rava\\rava-demo-source\\backend\\RavaDemo\\RavaModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Little Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
