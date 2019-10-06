@@ -1,0 +1,11 @@
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\bin\Debug\netcoreapp3.0\Service.deps.json
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\bin\Debug\netcoreapp3.0\Service.dll
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\bin\Debug\netcoreapp3.0\Service.pdb
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\bin\Debug\netcoreapp3.0\Data.dll
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\bin\Debug\netcoreapp3.0\Data.pdb
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\obj\Debug\netcoreapp3.0\Service.csprojAssemblyReference.cache
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\obj\Debug\netcoreapp3.0\Service.AssemblyInfoInputs.cache
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\obj\Debug\netcoreapp3.0\Service.AssemblyInfo.cs
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\obj\Debug\netcoreapp3.0\Service.csproj.CopyComplete
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\obj\Debug\netcoreapp3.0\Service.dll
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Service\obj\Debug\netcoreapp3.0\Service.pdb

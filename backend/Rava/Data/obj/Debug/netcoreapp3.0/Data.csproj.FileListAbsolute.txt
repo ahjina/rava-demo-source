@@ -1,0 +1,8 @@
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\bin\Debug\netcoreapp3.0\Data.deps.json
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\bin\Debug\netcoreapp3.0\Data.dll
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\obj\Debug\netcoreapp3.0\Data.csprojAssemblyReference.cache
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\obj\Debug\netcoreapp3.0\Data.AssemblyInfoInputs.cache
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\obj\Debug\netcoreapp3.0\Data.AssemblyInfo.cs
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\bin\Debug\netcoreapp3.0\Data.pdb
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\obj\Debug\netcoreapp3.0\Data.dll
+C:\Kuro-Ryuu\git-repo\rava-demo-source\backend\Rava\Data\obj\Debug\netcoreapp3.0\Data.pdb
