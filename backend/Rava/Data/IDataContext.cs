@@ -10,6 +10,6 @@ namespace Data
     {
         int ExecuteNonQuery(string query, SqlParameter[] parameters);
         DataSet ExecuteDataSet(string query, SqlParameter[] parameters);
-        DataTable ExecuteDataTable(string query, SqlParameter[] parameters);
+        DataTable ExecuteDataTable(string query, SqlParameter[] parameters, CommandType commandType);
     }
 }

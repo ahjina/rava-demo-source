@@ -33,6 +33,8 @@ namespace Rava.Controllers
         [HttpPost("[action]")]
         public IActionResult Insert(ProductModel _object)
         {
+            string productCode = _context.CreateNewCode("Product", "ProductCode");
+
             DataTable dt = new DataTable();
             dt.Columns.Add("Code", typeof(string));
             dt.Columns.Add("AttributeCode", typeof(string));
@@ -43,12 +45,18 @@ namespace Rava.Controllers
                 foreach (var item in _object.Details)
                 {
                     DataRow dr = dt.NewRow();
+
+                    dr["Code"] = productCode;
+                    dr["AttributeCode"] = item.AttributeCode;
+                    dr["Value"] = item.Value;
+
+                    dt.Rows.Add(dr);
                 }
             }
 
-            var result = _context.InsertProduct(_object.Product.ProductCode, _object.Product.Name, _object.Product.Type, Convert.ToDecimal(_object.Product.Price), dt);
+            var result = _context.InsertProduct(productCode, _object.Product.Name, _object.Product.Type, Convert.ToDecimal(_object.Product.Price), dt);
 
-            return Ok();
+            return Ok(result);
         }
     }
 }

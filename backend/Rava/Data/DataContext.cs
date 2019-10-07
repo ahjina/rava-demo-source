@@ -12,13 +12,13 @@ using Model.Product;
 
 namespace Data
 {
-    public class DataContext: DbContext, IDataContext
+    public class DataContext : DbContext, IDataContext
     {
         protected DataContext() { }
-        public DataContext(DbContextOptions<DataContext> options): base(options) { }
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public string ConnectionString = null;
-        
+
         public DataContext(string connectionString)
         {
             this.ConnectionString = connectionString;
@@ -100,7 +100,7 @@ namespace Data
             return ds;
         }
 
-        public DataTable ExecuteDataTable(string query, SqlParameter[] parameters)
+        public DataTable ExecuteDataTable(string query, SqlParameter[] parameters, CommandType commandType = CommandType.StoredProcedure)
         {
             var conn = Database.GetDbConnection();
             DataTable dt = new DataTable();
@@ -111,7 +111,7 @@ namespace Data
             {
                 var command = conn.CreateCommand();
                 command.CommandText = query;
-                command.CommandType = CommandType.StoredProcedure;
+                command.CommandType = commandType;
                 if (parameters != null)
                     command.Parameters.AddRange(parameters);
 
@@ -147,7 +147,7 @@ namespace Data
             };
 
             return ExecuteDataTable("[dbo].[Products.Filter]", parameters);
-        } 
+        }
 
         public int InsertProduct(string ProductCode, string Name, int? Type, decimal Price, DataTable TbDetail)
         {
@@ -166,12 +166,31 @@ namespace Data
 
         #region Utilities
 
-        public string CreateNewCode(string TableName)
+        public string CreateNewCode(string TableName, string ColumnName)
         {
             string result = string.Empty;
 
+            string query = "SELECT MAX(" + ColumnName + ") FROM " + TableName;
+
+            DataTable dt = ExecuteDataTable(query, null, CommandType.Text);
+
+            if (dt == null || dt.Rows.Count == 0) result = ColumnName + "-001";
+            else
+            {
+                string currentValue = dt.Rows[0][0].ToString();
+                int currentId = Convert.ToInt32(currentValue.Split('-')[1]);
+                int newId = currentId + 1;
+
+                switch (newId.ToString().Length)
+                {
+                    case 1: result = TableName.ToUpper() + "-00" + newId; break;
+                    case 2: result = TableName.ToUpper() + "-0" + newId; break;
+                    case 3: result = TableName.ToUpper() + "-" + newId; break;
+                }
+            }
+
             return result;
-        } 
+        }
         #endregion
     }
 }
