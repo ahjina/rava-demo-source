@@ -29,6 +29,9 @@ namespace Data
             builder.Entity<ProductEntity>().HasKey(p => p.ProductCode);
             builder.Entity<ProductEntity>().ToTable("Product");
 
+            builder.Entity<AttributeDetailEntity>().HasKey(p => new { p.ProductCode, p.AttributeCode });
+            builder.Entity<AttributeDetailEntity>().ToTable("AttributeDetail");
+
             base.OnModelCreating(builder);
         }
 
@@ -43,6 +46,7 @@ namespace Data
 
         // Register Entities
         public DbSet<ProductEntity> ProductEntity { get; set; }
+        public DbSet<AttributeDetailEntity> AttributeDetailEntity { get; set; }
 
 
         public int ExecuteNonQuery(string query, SqlParameter[] parameters)
@@ -132,14 +136,42 @@ namespace Data
             return dt;
         }
 
-        public DataTable ProductFilter(int? Type)
+        #region Product
+        public DataTable ProductFilter(string ProductCode, string Name, int? Type)
         {
             SqlParameter[] parameters =
             {
+                new SqlParameter("@ProductCode", ProductCode),
+                new SqlParameter("@Name", Name),
                 new SqlParameter("@Type", Type)
             };
 
             return ExecuteDataTable("[dbo].[Products.Filter]", parameters);
+        } 
+
+        public int InsertProduct(string ProductCode, string Name, int? Type, decimal Price, DataTable TbDetail)
+        {
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@ProductCode", ProductCode),
+                new SqlParameter("@Name", Name),
+                new SqlParameter("@Type", Type),
+                new SqlParameter("@Price", Price),
+                new SqlParameter("@TbDetail", TbDetail)
+            };
+
+            return ExecuteNonQuery("[dbo].[Product.Insert]", parameters);
         }
+        #endregion
+
+        #region Utilities
+
+        public string CreateNewCode(string TableName)
+        {
+            string result = string.Empty;
+
+            return result;
+        } 
+        #endregion
     }
 }

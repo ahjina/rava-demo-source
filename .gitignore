@@ -15,10 +15,6 @@ backend/Rava/Data/bin/
 
 backend/Rava/Data/obj/
 
-*.csproj
-
-*.sln
-
 backend/Rava/Model/bin/
 
 backend/Rava/Model/obj/
