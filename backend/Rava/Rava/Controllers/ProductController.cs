@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Model.Model.Product;
 using Model.Product;
-using Data;
 using Services.IService;
 
 namespace Rava.Controllers

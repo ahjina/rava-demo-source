@@ -5,16 +5,22 @@ using System.Text;
 
 namespace Data.Repository
 {
-    public class UtitlitiesRepository: DataContext
+    public class UtitlitiesRepository
     {
-        private IDataContext context;
+        private IDataContext _context;
+
+        public UtitlitiesRepository(IDataContext context)
+        {
+            _context = context;
+        }
+
         public string CreateNewCode(string TableName, string ColumnName)
         {
             string result = string.Empty;
 
             string query = "SELECT MAX(" + ColumnName + ") FROM " + TableName;
 
-            DataTable dt = ExecuteDataTable(query, null, CommandType.Text);
+            DataTable dt = _context.ExecuteDataTable(query, null, CommandType.Text);
 
             if (dt == null || dt.Rows.Count == 0) result = ColumnName + "-001";
             else
