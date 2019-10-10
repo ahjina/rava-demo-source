@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\source\rava-demo-source\rava-demo-source\backend\Rava\Services\Services.csproj" />
     <ProjectReference Include="..\Data\Data.csproj" />
   </ItemGroup>
 

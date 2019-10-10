@@ -6,10 +6,10 @@ using System.Text;
 
 namespace Data
 {
-    interface IDataContext
+    public interface IDataContext
     {
         int ExecuteNonQuery(string query, SqlParameter[] parameters);
         DataSet ExecuteDataSet(string query, SqlParameter[] parameters);
-        DataTable ExecuteDataTable(string query, SqlParameter[] parameters, CommandType commandType);
+        DataTable ExecuteDataTable(string query, SqlParameter[] parameters, CommandType commandType = CommandType.StoredProcedure);
     }
 }

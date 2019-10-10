@@ -13,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using Services.IService;
+using Services;
 //using Service;
 //using Service.Interfaces;
 
@@ -32,7 +34,9 @@ namespace Rava
         {
             services.AddDbContext<DataContext>(options => options.UseSqlServer("Data Source=LAPTOP-IE00MCEL\\KURORYUU;Initial Catalog=dbDemo;Integrated Security=True;Connect Timeout=30;"));
 
-            //services.AddScoped<IProductProvider, ProductProvider>();
+            services.AddScoped<IDataContext, DataContext>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUtitlitiesService, UtitlitiesService>();
 
             services
                 .AddMvc(options =>

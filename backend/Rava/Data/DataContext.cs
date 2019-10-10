@@ -17,7 +17,7 @@ namespace Data
         protected DataContext() { }
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        public string ConnectionString = null;
+        public string ConnectionString = string.Empty;
 
         public DataContext(string connectionString)
         {
@@ -135,62 +135,5 @@ namespace Data
 
             return dt;
         }
-
-        #region Product
-        public DataTable ProductFilter(string ProductCode, string Name, int? Type)
-        {
-            SqlParameter[] parameters =
-            {
-                new SqlParameter("@ProductCode", ProductCode),
-                new SqlParameter("@Name", Name),
-                new SqlParameter("@Type", Type)
-            };
-
-            return ExecuteDataTable("[dbo].[Products.Filter]", parameters);
-        }
-
-        public int InsertProduct(string ProductCode, string Name, int? Type, decimal Price, DataTable TbDetail)
-        {
-            SqlParameter[] parameters =
-            {
-                new SqlParameter("@ProductCode", ProductCode),
-                new SqlParameter("@Name", Name),
-                new SqlParameter("@Type", Type),
-                new SqlParameter("@Price", Price),
-                new SqlParameter("@TbDetail", TbDetail)
-            };
-
-            return ExecuteNonQuery("[dbo].[Product.Insert]", parameters);
-        }
-        #endregion
-
-        #region Utilities
-
-        public string CreateNewCode(string TableName, string ColumnName)
-        {
-            string result = string.Empty;
-
-            string query = "SELECT MAX(" + ColumnName + ") FROM " + TableName;
-
-            DataTable dt = ExecuteDataTable(query, null, CommandType.Text);
-
-            if (dt == null || dt.Rows.Count == 0) result = ColumnName + "-001";
-            else
-            {
-                string currentValue = dt.Rows[0][0].ToString();
-                int currentId = Convert.ToInt32(currentValue.Split('-')[1]);
-                int newId = currentId + 1;
-
-                switch (newId.ToString().Length)
-                {
-                    case 1: result = TableName.ToUpper() + "-00" + newId; break;
-                    case 2: result = TableName.ToUpper() + "-0" + newId; break;
-                    case 3: result = TableName.ToUpper() + "-" + newId; break;
-                }
-            }
-
-            return result;
-        }
-        #endregion
     }
 }

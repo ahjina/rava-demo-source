@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Model.Model.Product;
 using Model.Product;
+using Data;
+using Services.IService;
 
 namespace Rava.Controllers
 {
@@ -17,23 +19,25 @@ namespace Rava.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly DataContext _context;
+        private IProductService _productService;
+        private IUtitlitiesService _utilitiesService;
 
-        public ProductController(DataContext context)
+        public ProductController(IProductService productService, IUtitlitiesService utitlitiesService)
         {
-            _context = context;
+            _productService = productService;
+            _utilitiesService = utitlitiesService;
         }
 
         [HttpPost("[action]")]
         public IActionResult Filter(ProductEntity _object)
         {
-            return Ok(_context.ProductFilter(_object.ProductCode, _object.Name, _object.Type));
+            return Ok(_productService.ProductFilter(_object.ProductCode, _object.Name, _object.Type));
         }
 
         [HttpPost("[action]")]
         public IActionResult Insert(ProductModel _object)
         {
-            string productCode = _context.CreateNewCode("Product", "ProductCode");
+            string productCode = _utilitiesService.CreateNewCode("Product", "ProductCode");
 
             DataTable dt = new DataTable();
             dt.Columns.Add("Code", typeof(string));
@@ -54,7 +58,7 @@ namespace Rava.Controllers
                 }
             }
 
-            var result = _context.InsertProduct(productCode, _object.Product.Name, _object.Product.Type, Convert.ToDecimal(_object.Product.Price), dt);
+            var result = _productService.InsertProduct(productCode, _object.Product.Name, _object.Product.Type, Convert.ToDecimal(_object.Product.Price), dt);
 
             return Ok(result);
         }
