@@ -1,11 +1,11 @@
 ﻿using Data;
 using Data.Repository;
-using Services.IService;
+using Service.IService;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Services
+namespace Service
 {
     public class UtitlitiesService: IUtitlitiesService
     {
