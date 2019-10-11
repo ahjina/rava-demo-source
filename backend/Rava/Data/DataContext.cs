@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using Model.Product;
+using Model.Entity.MasterData;
 
 namespace Data
 {
@@ -31,6 +32,9 @@ namespace Data
 
             builder.Entity<AttributeDetailEntity>().HasKey(p => new { p.ProductCode, p.AttributeCode });
             builder.Entity<AttributeDetailEntity>().ToTable("AttributeDetail");
+
+            builder.Entity<MasterDataEntity>().HasKey(p => new { p.GroupCode, p.Code });
+            builder.Entity<MasterDataEntity>().ToTable("MasterData");
 
             base.OnModelCreating(builder);
         }

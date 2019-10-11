@@ -31,5 +31,10 @@ namespace Service
         {
             return _repository.GetProductByCode(ProductCode);
         }
+
+        public DataTable GetTopLasted()
+        {
+            return _repository.GetTopLasted();
+        }
     }
 }

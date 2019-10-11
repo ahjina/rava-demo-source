@@ -61,5 +61,13 @@ namespace Rava.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("[action]")]
+        public IActionResult GetTopLasted()
+        {
+            var result = _productService.GetTopLasted();
+
+            return Ok(result);
+        }
     }
 }

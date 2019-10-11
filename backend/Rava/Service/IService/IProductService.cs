@@ -10,5 +10,6 @@ namespace Service.IService
         DataTable ProductFilter(string ProductCode, string Name, int? Type);
         int InsertProduct(string ProductCode, string Name, int? Type, decimal Price, DataTable TbDetail);
         DataTable GetProductByCode(string ProductCode);
+        DataTable GetTopLasted();
     }
 }

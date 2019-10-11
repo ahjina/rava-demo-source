@@ -50,5 +50,10 @@ namespace Data.Repository
 
             return _context.ExecuteDataTable("[dbo].[Product.GetByProductCode]", parameters);
         }
+
+        public DataTable GetTopLasted()
+        {
+            return _context.ExecuteDataTable("[dbo].[Product.GetTopLasted]");
+        }
     }
 }

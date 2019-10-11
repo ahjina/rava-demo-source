@@ -32,12 +32,16 @@ namespace Rava
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options => options.UseSqlServer("Data Source=DESKTOP-K2D3HBN\\SQLEXPRESS;Initial Catalog=dbDemo;Integrated Security=True;Connect Timeout=30;"));
+            // services.AddDbContext<DataContext>(options => options.UseSqlServer("Data Source=DESKTOP-K2D3HBN\\SQLEXPRESS;Initial Catalog=dbDemo;Integrated Security=True;Connect Timeout=30;"));
+
+            services.AddDbContext<DataContext>(options => options.UseSqlServer("Data Source=LAPTOP-IE00MCEL\\KURORYUU;Initial Catalog=dbDemo;Integrated Security=True;Connect Timeout=30;"));
 
             services.AddScoped<IDataContext, DataContext>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IUtitlitiesService, UtitlitiesService>();
             services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IMasterDataService, MasterDataService>();
+
             services
                 .AddMvc(options =>
                 {

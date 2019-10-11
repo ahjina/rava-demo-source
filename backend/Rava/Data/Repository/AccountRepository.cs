@@ -6,9 +6,9 @@ using Microsoft.Data.SqlClient;
 
 namespace Data.Repository
 {
-    public class AccountRepository 
+    public class AccountRepository
     {
-        private  IDataContext _context;
+        private IDataContext _context;
 
         public AccountRepository(IDataContext context)
         {
@@ -19,12 +19,12 @@ namespace Data.Repository
         {
 
             SqlParameter[] par =
-           {
+            {
                 new SqlParameter("Phone",phone),
                 new SqlParameter("Password", "123")
             };
 
-            DataTable  dtAcc = _context.ExecuteDataTable("[Account].[CheckLogin]", par);
+            DataTable dtAcc = _context.ExecuteDataTable("[Account].[CheckLogin]", par);
             return dtAcc;
         }
     }
