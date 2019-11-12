@@ -27,18 +27,18 @@ namespace Data.Repository
             return _context.ExecuteDataTable("[dbo].[Products.Filter]", parameters);
         }
 
-        public int InsertProduct(string ProductCode, string Name, int? Type, decimal Price, DataTable TbDetail)
+        public int InsertProduct(string @ProductCode, string @Name, int? @Type, decimal @Price, DataTable @TbDetail)
         {
-            SqlParameter[] parameters =
-            {
-                new SqlParameter("@ProductCode", ProductCode),
-                new SqlParameter("@Name", Name),
-                new SqlParameter("@Type", Type),
-                new SqlParameter("@Price", Price),
-                new SqlParameter("@TbDetail", TbDetail)
-            };
+            //SqlParameter[] parameters =
+            //{
+            //    new SqlParameter("@ProductCode", ProductCode),
+            //    new SqlParameter("@Name", Name),
+            //    new SqlParameter("@Type", Type),
+            //    new SqlParameter("@Price", Price),
+            //    new SqlParameter("@TbDetail", TbDetail)
+            //};
 
-            return _context.ExecuteNonQuery("[dbo].[Product.Insert]", parameters);
+            return _context.ExecuteNonQuery("[dbo].[Product.Insert]", @ProductCode, @Name, @Type, @Price, @TbDetail);
         }
 
         public DataTable GetProductByCode(string ProductCode)

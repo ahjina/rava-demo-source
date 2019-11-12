@@ -28,5 +28,13 @@ namespace Rava.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("[action]")]
+        public IActionResult MasterDataInsert([FromBody]MasterDataEntity _object)
+        {
+            int result = _masterDataService.Insert(_object.GroupCode, _object.Code, _object.Name, _object.Order);
+
+            return Ok(result);
+        }
     }
 }

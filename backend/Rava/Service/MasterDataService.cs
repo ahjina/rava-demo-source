@@ -22,9 +22,9 @@ namespace Service
             return _repository.GetListByGroupCode(GroupCode);
         }
 
-        public int Insert(string GroupCode, int Id, string Code, string Name, int? Order)
+        public int Insert(string GroupCode, string Code, string Name, int? Order)
         {
-            return _repository.Insert(GroupCode, Id, Code, Name, Order);
+            return _repository.Insert(GroupCode, Code, Name, Order);
         }
     }
 }

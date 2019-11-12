@@ -10,6 +10,7 @@ using System.Linq;
 using System.Reflection;
 using Model.Product;
 using Model.Entity.MasterData;
+using System.Linq.Expressions;
 
 namespace Data
 {
@@ -53,7 +54,7 @@ namespace Data
         public DbSet<AttributeDetailEntity> AttributeDetailEntity { get; set; }
 
 
-        public int ExecuteNonQuery(string query, SqlParameter[] parameters)
+        public int ExecuteNonQuery(string query, params object[] parameters)
         {
             var conn = Database.GetDbConnection();
 
@@ -64,7 +65,11 @@ namespace Data
             command.CommandType = CommandType.StoredProcedure;
 
             if (parameters != null)
-                command.Parameters.AddRange(parameters);
+            {
+                DbParameter[] _params = GetParameters(parameters);
+
+                command.Parameters.AddRange(_params);
+            }
 
             return command.ExecuteNonQuery();
         }
@@ -138,6 +143,23 @@ namespace Data
             }
 
             return dt;
+        }
+
+        private DbParameter[] GetParameters(params object[] objects)
+        {
+            List<DbParameter> parameters = new List<DbParameter>();
+
+            //add parameters to sql
+            for (var i = 0; i <= (objects?.Length ?? 0) - 1; i++)
+            {
+                Type type = objects[i].GetType();
+
+                FieldInfo[] fields = type.GetFields();
+            }
+
+            DbParameter[] result = parameters.ToArray();
+
+            return result;
         }
     }
 }

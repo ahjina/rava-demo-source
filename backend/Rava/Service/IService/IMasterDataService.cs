@@ -8,6 +8,6 @@ namespace Service.IService
     public interface IMasterDataService
     {
         DataTable GetListByGroupCode(string GroupCode);
-        int Insert(string GroupCode, int Id, string Code, string Name, int? Order);
+        int Insert(string GroupCode, string Code, string Name, int? Order);
     }
 }
